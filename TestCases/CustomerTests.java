@@ -35,25 +35,25 @@ public class CustomerTests {
         //repeat for savings
         //repeat for default constructor
 
-        assertEquals(testomer.depositsSize(), 0);
+        assertEquals(0, testomer.depositsSize());
         testomer.deposit(100.08, new Date(), "Checking");
-        assertEquals(testomer.depositsSize(), 1);
-        assertEquals(testomer.getCheckBalance(), 200.08, 0.0);
+        assertEquals(1, testomer.depositsSize());
+        assertEquals(200.08, testomer.getCheckBalance(),0.0);
 
         testomer.deposit(12.2, new Date(), "Saving");
-        assertEquals(testomer.depositsSize(), 2);
-        assertEquals(testomer.getSavingBalance(), 62.2, 0.0);
+        assertEquals(2, testomer.depositsSize());
+        assertEquals(62.2, testomer.getSavingBalance(), 0.0);
 
 
 
-        assertEquals(defaultTestomer.depositsSize(), 0);
+        assertEquals(0, defaultTestomer.depositsSize());
         defaultTestomer.deposit(100.08, new Date(), "Checking");
-        assertEquals(defaultTestomer.depositsSize(), 1);
-        assertEquals(defaultTestomer.getCheckBalance(), 100.08, 0.0);
+        assertEquals(1, defaultTestomer.depositsSize());
+        assertEquals(100.08, defaultTestomer.getCheckBalance(), 0.0);
 
         defaultTestomer.deposit(12.2, new Date(), "Saving");
-        assertEquals(defaultTestomer.depositsSize(), 2);
-        assertEquals(defaultTestomer.getSavingBalance(), 12.2, 0.0);
+        assertEquals(2, defaultTestomer.depositsSize());
+        assertEquals(12.2, defaultTestomer.getSavingBalance(),0.0);
 
     }
 
@@ -65,17 +65,17 @@ public class CustomerTests {
         //check that there are no deposits in array
         //check if balance values are correct
         //repeat for default constructor
-        assertEquals(testomer.depositsSize(), 0);
+        assertEquals(0, testomer.depositsSize());
         testomer.deposit(100.08, new Date(), "Something");
-        assertEquals(testomer.depositsSize(), 0);
-        assertEquals(testomer.getCheckBalance(), 100, 0.0);
-        assertEquals(testomer.getSavingBalance(), 50, 0.0);
+        assertEquals(0, testomer.depositsSize());
+        assertEquals(100, testomer.getCheckBalance(),0.0);
+        assertEquals(50, testomer.getSavingBalance(), 0.0);
 
-        assertEquals(defaultTestomer.depositsSize(), 0);
+        assertEquals(0, defaultTestomer.depositsSize());
         defaultTestomer.deposit(100.08, new Date(), "Something");
-        assertEquals(defaultTestomer.depositsSize(), 0);
-        assertEquals(defaultTestomer.getCheckBalance(), 0, 0.0);
-        assertEquals(defaultTestomer.getSavingBalance(), 0, 0.0);
+        assertEquals(0, defaultTestomer.depositsSize());
+        assertEquals(0, defaultTestomer.getCheckBalance(), 0.0);
+        assertEquals(0, defaultTestomer.getSavingBalance(), 0.0);
 
     }
 
@@ -88,25 +88,25 @@ public class CustomerTests {
         //repeat for savings
         //repeat for default constructor
 
-        assertEquals(testomer.withdrawsSize(), 0);
+        assertEquals(0, testomer.withdrawsSize());
         testomer.withdraw(50.05, new Date(), "Checking");
-        assertEquals(testomer.withdrawsSize(), 1);
-        assertEquals(testomer.getCheckBalance(), 49.95, 0.0);
+        assertEquals(1, testomer.withdrawsSize());
+        assertEquals(49.95, testomer.getCheckBalance(), 0.0);
 
         testomer.withdraw(60.06, new Date(), "Saving");
-        assertEquals(testomer.withdrawsSize(), 2);
-        assertEquals(testomer.getSavingBalance(), -10.06, 0.0);
+        assertEquals(2, testomer.withdrawsSize());
+        assertEquals(-10.06, testomer.getSavingBalance(), 0.0);
 
 
 
-        assertEquals(defaultTestomer.withdrawsSize(), 0);
+        assertEquals(0, defaultTestomer.withdrawsSize());
         defaultTestomer.withdraw(50.05, new Date(), "Checking");
-        assertEquals(defaultTestomer.withdrawsSize(), 1);
-        assertEquals(defaultTestomer.getCheckBalance(), -50.05, 0.0);
+        assertEquals(1, defaultTestomer.withdrawsSize());
+        assertEquals(-50.05, defaultTestomer.getCheckBalance(), 0.0);
 
         defaultTestomer.withdraw(60.06, new Date(), "Saving");
-        assertEquals(defaultTestomer.withdrawsSize(), 2);
-        assertEquals(defaultTestomer.getSavingBalance(), -60.06, 0.0);
+        assertEquals(2, defaultTestomer.withdrawsSize());
+        assertEquals(-60.06, defaultTestomer.getSavingBalance(), 0.0);
 
     }
 
@@ -119,25 +119,25 @@ public class CustomerTests {
         //repeat for savings
         //repeat for default constructor
 
-        assertEquals(testomer.withdrawsSize(), 0);
+        assertEquals(0, testomer.withdrawsSize());
         testomer.withdraw(200.98, new Date(), "Checking");
-        assertEquals(testomer.withdrawsSize(), 0);
-        assertEquals(testomer.getCheckBalance(), 100, 0.0);
+        assertEquals(0, testomer.withdrawsSize());
+        assertEquals(100, testomer.getCheckBalance(), 0.0);
 
         testomer.withdraw(160.06, new Date(), "Saving");
-        assertEquals(testomer.withdrawsSize(), 0);
-        assertEquals(testomer.getSavingBalance(), 50, 0.0);
+        assertEquals(0, testomer.withdrawsSize());
+        assertEquals(50, testomer.getSavingBalance(), 0.0);
 
 
 
-        assertEquals(defaultTestomer.withdrawsSize(), 0);
+        assertEquals(0, defaultTestomer.withdrawsSize());
         defaultTestomer.withdraw(550.05, new Date(), "Checking");
-        assertEquals(defaultTestomer.withdrawsSize(), 0);
-        assertEquals(defaultTestomer.getCheckBalance(), 0, 0.0);
+        assertEquals(0, defaultTestomer.withdrawsSize());
+        assertEquals(0, defaultTestomer.getCheckBalance(), 0.0);
 
         defaultTestomer.withdraw(230, new Date(), "Saving");
-        assertEquals(defaultTestomer.withdrawsSize(), 0);
-        assertEquals(defaultTestomer.getSavingBalance(), 0, 0.0);
+        assertEquals(0, defaultTestomer.withdrawsSize());
+        assertEquals(0, defaultTestomer.getSavingBalance(), 0.0);
 
     }
 
@@ -148,17 +148,17 @@ public class CustomerTests {
         //check that there are no withdrawals in array
         //check if balance values are correct
         //repeat for default constructor
-        assertEquals(testomer.withdrawsSize(), 0);
+        assertEquals(0, testomer.withdrawsSize());
         testomer.withdraw(100.08, new Date(), "Something");
-        assertEquals(testomer.withdrawsSize(), 0);
-        assertEquals(testomer.getCheckBalance(), 100, 0.0);
-        assertEquals(testomer.getSavingBalance(), 50, 0.0);
+        assertEquals(0, testomer.withdrawsSize());
+        assertEquals(100, testomer.getCheckBalance(), 0.0);
+        assertEquals(50, testomer.getSavingBalance(), 0.0);
 
-        assertEquals(defaultTestomer.withdrawsSize(), 0);
+        assertEquals(0, defaultTestomer.withdrawsSize());
         defaultTestomer.withdraw(100.08, new Date(), "Something");
-        assertEquals(defaultTestomer.withdrawsSize(), 0);
-        assertEquals(defaultTestomer.getCheckBalance(), 0, 0.0);
-        assertEquals(defaultTestomer.getSavingBalance(), 0, 0.0);
+        assertEquals(0, defaultTestomer.withdrawsSize());
+        assertEquals(0, defaultTestomer.getCheckBalance(), 0.0);
+        assertEquals(0, defaultTestomer.getSavingBalance(), 0.0);
 
     }
 
